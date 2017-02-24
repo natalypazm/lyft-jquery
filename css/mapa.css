@@ -1,0 +1,17 @@
+*{
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+.gm-style-mtc{
+	height:30px;
+}
+.gm-style-mtc span{
+	height:30px;
+}
+#map{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-repeat:no-repeat;
+}

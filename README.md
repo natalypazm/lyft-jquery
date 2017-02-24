@@ -1,1 +1,1 @@
-# lyft-jquery
+# lyft
