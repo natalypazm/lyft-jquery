@@ -8,7 +8,7 @@ var opcionesMapa = {
 }
 
 function initMap() {
-    miMapa = new google.maps.Map(document.getElementById('map'), {
+    miMapa = new google.maps.Map $('#map');{//document.getElementById('map'), {
         center: {
             lat: latLongLabo.lat,
             lng: latLongLabo.lng},

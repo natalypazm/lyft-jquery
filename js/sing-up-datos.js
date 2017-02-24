@@ -36,7 +36,6 @@ function validarEmail( email ) {
 function nextpage() {
     
     location.href='mapa.html';
-     //window.location= "mapa.html";
 }
 function validar(){
   if(soloLetras()==true && validarEmail()==true){
