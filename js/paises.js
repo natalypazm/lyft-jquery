@@ -8,10 +8,10 @@ var leng = paises.length;
 var lista=$('#lista-paises');//document.getElementById("lista-paises");
 //lista.each(function(){
 for (var i=0; i < leng; i++){
-  var html='<a id="country" ><li class="list-group-item">'+'<img class="flag" src="'+ paises[i].imageURL+'" style="height:20px; width: 30px;" alt=""><p class="country" style="margin-left:5px;">'+paises[i].nombre+'</p><span class="codigo" style="display:none;">+'+paises[i].phone_code+'</span>'+'</li></a>'; 
+  var html='<a id="country" href="sing-up.html" ><li class="list-group-item" >'+'<img class="flag" src="'+ paises[i].imageURL+'" style="height:20px; width: 30px;" alt=""><p class="country" style="margin-left:5px;">'+paises[i].nombre+'</p><span class="codigo" style="display:none;">+'+paises[i].phone_code+'</span>'+'</li></a>'; 
     lista.append(html); 
 
-  var pais=localStorage.getItem('pais',paises[i].nombre);
+  //var pais=localStorage.getItem('pais',paises[i].nombre);
 }
 var lis=$('li');//document.getElementsByTagName('li');
 lis.each(function(){
@@ -22,9 +22,9 @@ lis.each(function(){
 }
 //button.on("click",onButtonClick);
 function onLinkClick(evt){
-var srclocal= $('.flag').attr("src");//getElementsByClassName('flag')[0].src;
+var srclocal=evt.currentTarget.getElementsByClassName('flag')[0].src;//$('.flag').attr("src");
 console.log(srclocal);
-var codelocal=$('.codigo').textContent;//getElementsByClassName('codigo')[0].textContent;
+var codelocal=evt.currentTarget.getElementsByClassName('codigo')[0].textContent;//$('.codigo').textContent;
 localStorage.setItem('src', srclocal);
 localStorage.setItem('code', codelocal);
 }

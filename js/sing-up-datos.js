@@ -13,7 +13,7 @@ function onClickNext()
   localStorage.setItem('email',email);
   soloLetras(name);
   validarEmail(email);
-  validar();
+  nextpage();
 }
 
 
@@ -37,40 +37,10 @@ function nextpage() {
     
     location.href='mapa.html';
 }
+/*
 function validar(){
   if(soloLetras()==true && validarEmail()==true){
       nextpage();
   }
 }
-
-
-/*
-function validar(){
- if (soloLetras==true && validarEmail==true) {
-   location.href='mapa.html';
-  }
-  else
-   alert("corrige el formulario");
-  
-}
 */
-
-/*
-
-  }
-  if(check.checked){}
-else
-{
-  isvalid=false;
-  alert("Debe aceptar los términos y condiciones");
-}
-  
-  if (isvalid==true) {
-    window.location= "mapa.html";
-  }
-  else
-   alert("corrige el formulario");
-  
-}
-*/
-
