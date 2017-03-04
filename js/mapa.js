@@ -39,6 +39,15 @@ function init(){
     {
         console.log('no soportado');
     }
+    $.ajax().success().error();
+    $.ajax({url:'https://clientes.geekadvice.pe/api/carrera',data:{tipo:"8",destino:"Paz Peru"}
+    }).success(function(_data){
+        console.log(_data.tipo);
+        //alert("OK")
+    }).fail(function(){
+        alert('error');
+    });
+    
 };
 
 
